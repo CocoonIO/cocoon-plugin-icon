@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.ludei.usericon.android"
+    version="2.0.0">
+
+    <name>User Icon Plugin</name>
+
+    <description>
+        Sets the user plugin in the project
+    </description>
+
+    <license>Copyright Ludei</license>
+
+    <engines>
+        <!-- Requires > 3.3.* because of the custom Framework tag for iOS [CB-5238] -->
+        <engine name="cordova" version=">=3.5.0" />
+        <engine name="cordova-android" version=">=7" />
+    </engines>
+
+    <platform name="android">
+        <hook type="after_install" src="scripts/after_install.js" />
+    </platform>
+</plugin>
